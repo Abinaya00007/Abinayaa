@@ -1,0 +1,14 @@
+class markexception(Exception):
+    pass
+def checkmark():
+    a=int(input("enter the mark obtained"))
+    passmark=100
+    try:
+      if (a<passmark):
+         raise markexception
+      print("he can go to next class")
+    except markexception as cm:
+        print("he cant go to next claass")
+
+checkmark()
+    
